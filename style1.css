@@ -1,0 +1,428 @@
+* {
+    font-family: Sans-serif;
+}
+/* body{
+    background-image: url('img_src/bg.jpg')!important;
+} */
+.navbar {
+    width: 100%;
+    height: 100px;
+    background-color:#ffffff86;
+    position: relative;
+    padding-left: 15px;
+    padding-top: 15px;
+    /* border-bottom: 1px solid #95cef0; */
+}   
+.brand_name{
+    width: 70px;
+    height: 70px;
+    background-color: rgb(255, 255, 255);
+    margin-right: 10px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100%; 
+    outline: none;
+    border: none;
+    border-radius: 20%;
+    
+}
+.hammenu{
+    width: 70px;
+    height: 70px;
+    background-image:url('img_rsc/hammenu.png');
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-size: 100%; 
+    outline: none;
+    border: none;
+    margin-right: 10px;
+    position: absolute;
+    border-radius: 20%;
+    background-size: 100%; 
+    transition-property: background-color;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+    
+}
+
+.hammenu:hover{
+    background-color: #95cef0;
+}
+.search_box{
+    width: 30%;
+    height: 70px;
+    position: absolute;
+    top : 15px;
+    right: 40%;
+    left : 30%;
+}
+.setting_icon_box {
+    width: 70px;
+    height: 70px;
+    /* background-color: yellow; */
+    position: absolute;
+    border-radius: 50%;
+    right : 12%;
+    top : 15px;
+    left : 84%;
+}
+.profile_data {
+    width: 10%;
+    height: 70px;
+    background-color: rgb(136, 136, 136);
+    position: absolute;
+    top: 15px;
+    left: 89%;
+    
+}
+input[type='text'] {
+    width: 100%;
+    height: 70px;
+    padding-left:40px;
+    border-radius: 30px;
+    border: 0;
+    font-size: 20px;
+    opacity: 0.7;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    background-color: rgba(193, 204, 224, 0.644);
+}
+input[type='text']:focus {
+    border: none;
+    box-shadow: none;
+    border-radius: 30px;
+    opacity: 1;
+    border-color: #95cef0;
+    outline: none;
+}
+input[type='text']:hover {
+    border: none;
+    box-shadow: none;
+    opacity: 0.8;
+    background-color: #95cef0;
+    border-radius: 30px;
+}
+input[type='password'] {
+    width: 100%;
+    height: 70px;
+    padding-left:40px;
+    border-radius: 30px;
+    border: 0;
+    font-size: 20px;
+    opacity: 0.7;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    background-color: rgba(193, 204, 224, 0.644);
+}
+input[type='password']:focus {
+    border: none;
+    box-shadow: none;
+    border-radius: 30px;
+    opacity: 1;
+    border-color: #95cef0;
+    outline: none;
+}
+input[type='password']:hover {
+    border: none;
+    box-shadow: none;
+    opacity: 0.8;
+    background-color: #95cef0;
+    border-radius: 30px;
+}
+.settingsicon {
+    width : 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-image:url('img_rsc/settingsicon.png');
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-size: 50%; 
+    background-position: center;
+    outline: none;
+    border: none;
+    opacity: 1;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+
+}
+
+.settingsicon:hover {
+    opacity: 0.5;
+    background-color: #95cef0;
+}
+
+#sidebar {
+    
+    width: 10%;
+    height: 86.9%;
+    margin: 0px;
+    padding: 0px;
+    background-color: #000000d3;
+    position: absolute;
+    text-align: left;
+    left: -200px;
+    transition: all 100ms linear;
+    /* display: none; */
+    
+} 
+#sidebar ul li {
+    color: rgb(255, 255, 255);
+    list-style: none;
+    padding: 15px 0px;
+
+}
+
+#sidebar.active {
+    left: 0px !important;
+    /* display: block !important; */
+}
+
+#mainarea {
+    left: 5%;
+    width: 90%;
+    height: 86.9%;
+    background-color:#ffffff00;
+    position: absolute;
+    transition: all 100ms linear;
+}
+#mainarea.actives {
+    /* left: 20%; */
+    left: 10% !important;
+}
+
+#myday {
+    top: 90px;
+    left: 100px;
+    width: 90%;
+    height: 85%;
+    background-color:#00000013;
+    border-radius: 10px;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+#md {
+    text-align: left;
+    padding: 20px 20px;
+    font-size: 50px;
+    font: bold;
+    list-style: none;
+    color: rgb(56, 56, 211);
+}
+#td {
+    text-align: left;
+    padding: 0px 20px;
+    font-size: 20px;
+    font: bold;
+    list-style: none;
+    color: rgb(102, 102, 102);
+}
+#listareamd {
+    top: 20px;
+    left: 0px;
+    width: 98.8%;
+    height: 74%;
+    background-color:#0026ff5b;
+    border-radius: 10px;
+    position: relative;
+    padding: 10px 10px;
+}
+#important {
+    top: 90px;
+    left: 100px;
+    width: 90%;
+    height: 85%;
+    background-color:#00000013;
+    border-radius: 10px;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+#imp {
+    text-align: left;
+    padding: 31px 20px;
+    font-size: 50px;
+    font: bold;
+    list-style: none;
+        color: rgb(230, 42, 42);
+    }
+#listareaimp {
+    top: 20px;
+    left: 20px;
+    width: 96.3%;
+    height: 74%;
+    background-color:#fa880680;
+    border-radius: 10px;
+    position: relative;
+    padding: 10px 10px;
+}
+#upcoming {
+    top: 90px;
+    left: 100px;
+    width: 90%;
+    height: 85%;
+    background-color:#00000013;
+    border-radius: 10px;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+#upc {
+    text-align: left;
+    padding: 31px 20px;
+    font-size: 50px;
+    font: bold;
+    list-style: none;
+    color: rgb(117, 7, 180);
+}
+#listareaupc {
+    top: 20px;
+    left: 20px;
+    width: 96.3%;
+    height: 74%;
+    background-color:#af38ff80;
+    border-radius: 10px;
+    position: relative;
+    padding: 10px 10px;
+}
+#overall {
+    top: 90px;
+    left: 100px;
+    width: 90%;
+    height: 85%;
+    background-color:#00000013;
+    border-radius: 10px;
+    position: absolute;
+    visibility : hidden;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+#ova {
+    text-align: left;
+    padding: 31px 20px;
+    font-size: 50px;
+    font: bold;
+    list-style: none;
+    color: rgb(223, 12, 100);
+}
+#listareaova {
+    top: 20px;
+    left: 20px;
+    width: 96.3%;
+    height: 74%;
+    background-color:#e272af80;
+    border-radius: 10px;
+    position: relative;
+    padding: 10px 10px;
+}
+body {
+    position: relative;
+}
+#login {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background-color: rgba(255, 255, 255, 0.493);
+    transform: translate(-50%,-50%);
+    border-radius: 4%;
+    padding: 10px ;
+}
+#logintitle {
+    text-align: left;
+    padding: 31px 20px;
+    font-size: 50px;
+    font: bold;
+    list-style: none;
+    color: rgb(8, 10, 114);
+
+}
+
+#emailid {
+    text-align: left;
+    padding: 20px 20px;
+    font-size: 25px;
+    font: bold;
+    list-style: none;
+    color: rgba(8, 10, 114, 0.582);    
+}
+
+#psswd {
+    text-align: left;
+    padding: 20px 20px;
+    font-size: 25px;
+    font: bold;
+    list-style: none;
+    color: rgba(8, 10, 114, 0.582);    
+}
+
+#submitbut {
+    
+    width: 120px;
+    height: 60px;
+    font-size: 30px;
+    border-radius: 5px;
+    background-color: #4b11ec8e;
+
+}
+#signups {
+    top: 40%;
+    left: 50%;
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background-color: rgba(255, 255, 255, 0.493);
+    transform: translate(-50%,-50%);
+    border-radius: 4%;
+    padding: 10px ;
+}
+#signupq {
+    text-align: left;
+    padding: 31px 20px;
+    font-size: 50px;
+    font: bold;
+    list-style: none;
+    color: rgb(8, 10, 114);
+
+}
+#firstname {
+    text-align: left;
+    padding: 20px 20px;
+    font-size: 25px;
+    font: bold;
+    list-style: none;
+    color: rgba(8, 10, 114, 0.582);    
+}
+#lastname {
+    text-align: left;
+    padding: 20px 20px;
+    font-size: 25px;
+    font: bold;
+    list-style: none;
+    color: rgba(8, 10, 114, 0.582);    
+}
+#submitbutu {
+    
+    width: 120px;
+    height: 60px;
+    font-size: 30px;
+    border-radius: 5px;
+    background-color: #4b11ec8e;
+
+}
